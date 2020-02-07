@@ -15,7 +15,15 @@ It contains a sub-module, so you'll want to do:
 git clone --recursive https://github.com/ckane/aws-virtmirror-scripts.git
 ```
 
-To build the `stripe` tool:
+## Installing
+Expects `systemd`.
+
+```bash
+./install.sh
+```
+
+## Building Stripe
+To build the `stripe` tool, follow the below commands. Keep in mind that the `install.sh` will do this for you.
 
 ```bash
 cd stripe
