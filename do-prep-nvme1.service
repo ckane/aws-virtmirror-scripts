@@ -1,0 +1,9 @@
+[Unit]
+Description=Prepare NVME1 as capture buffer
+
+[Service]
+Type=oneshot
+ExecStart=/home/ec2-user/aws-virtmirror-scripts/prep_nvme1.sh
+
+[Install]
+WantedBy=multi-user.target

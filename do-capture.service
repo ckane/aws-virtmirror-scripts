@@ -1,0 +1,10 @@
+[Unit]
+After=network-online.target
+Requires=do-prep-nvme1.service
+Description=Packet Collection Service
+
+[Service]
+ExecStart=/home/ec2-user/aws-virtmirror-scripts/do_capture.sh
+
+[Install]
+WantedBy=multi-user.target

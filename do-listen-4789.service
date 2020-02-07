@@ -1,0 +1,10 @@
+[Unit]
+After=do-capture.service
+Requires=do-capture.service
+Description=UDP 4789 Listener
+
+[Service]
+ExecStart=/home/ec2-user/aws-virtmirror-scripts/do-listen-4789.sh
+
+[Install]
+WantedBy=multi-user.target
